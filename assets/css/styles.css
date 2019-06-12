@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("http://www.dnsnow.in/wp-content/uploads/2018/11/watercolor5.jpg");
+    color: black;
+    font-family:  'Roboto', sans-serif;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+header p {
+    font-style: italic;
+}
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    line-height: 120px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+h3 {
+    font-weight:bold;
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+header {
+    height: auto;
+    background-image: url("https://iveynetwork.ca/imageGen.ashx?image=/cmsmedia/2574662/banner-toronto.jpg&compression=50&width=2280");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 0%;
+}
+
+.name {
+    height: 30vh;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px rgb(27, 20, 43);
+}
+
+.nav-bar {
+    background-color:rgba(211, 221, 223, 0);
+    overflow: hidden;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+a {
+    float: right;
+    display: block;
+    padding: 8px 12px;
+    background-color: black;
+    color: blanchedalmond;
+    
+}
+
+a:hover {
+    background-color: black;
+    color: rgb(255, 5, 5);
+}
+
+a:active {
+    background-color: aqua;
+    colwhite;or: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.leftside {
+    flex:29%;
+    padding: 20px;
+    background-color: rgb(247, 247, 233);
+    margin-right: 1%;
+}
+
+.rightside {
+    flex:69%;
+    background-color: white;
+    padding: 20px;
+    margin-left: 1%;
+}
+
+article {
+    padding:20px 10px;
+    background-color: gray;
+}
+
+.a-h, 
+.a-p {
+    background-color: white;
+}
+
+img {
+    float:left;
+    padding-right: 8px;
+}
+
+footer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding:20px;
+    background-color:#ddd;
+    text-align: center;
+}
+
