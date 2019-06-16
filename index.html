@@ -1,46 +1,80 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Longia Sarneet</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/CSS">
+  <title>About Me | SL</title>
 </head>
 
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Sarneet Longia</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <!-- Standard Navbar from Boot Strap -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;" id="nav-bar">
+    <a class="navbar-brand" href="index.html">Sarneet Longia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
+  <div class="container rounded" id="container1">
+    <div class="row" id="row">
+      <div class="col-4">
+        <h1>
+          <strong>About Me</strong>
+        </h1>
+        <img src="assets/images/me.jpeg" alt="A Legend" id="me" class="img-fluid rounded float-left">
 
-      <img src="assets/images/me.jpeg" class="auth-image" alt="Sarneet Longia">
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
-
-      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
-      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-    </section>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Very useful text indeed, helps me take up space as I need.</p>
+      </div>
+      <div class="col-8" id="rightside">
+        <img src="assets/images/mean.jpg" alt="Mean Dev" class="img-fluid mx-auto d-block float-right rounded">        
+      </div>
+    </div>
+  </div>
+  <div class="container rounded" id="container2">
+    <div class="row">
+      <div class="col-4">
+        <img class="img-fluid rounded"
+          src="https://image.slidesharecdn.com/about-my-friends-140628082310-phpapp02/95/about-best-friends-html-css-and-js-1-638.jpg?cb=1403943877"
+          alt="a pic">
+      </div>
+      <div class="col-4">
+        <img class="img-fluid rounded" src="https://cdn-images-1.medium.com/max/1200/1*OH0dDfJAGv6aEGFk2zLAxw.jpeg"
+          alt="another one">
+      </div>
+      <div class="col-4">
+        <img class="img-fluid rounded"
+          src="https://3.bp.blogspot.com/-7pXla4gYcSU/XB-aQElY_zI/AAAAAAAAHTA/soP-84BDatwdPyeo3jrwtQxQAvzbQIbUgCLcBGAs/s1600/js_css_html.png"
+          alt="ey3">
+      </div>
+    </div>
   </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
+  <footer class="footer" id="footer">
+    <div class="container text-center">
+      Copyright &copy;
     </div>
   </footer>
+
 </body>
 
 </html>
