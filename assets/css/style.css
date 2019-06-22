@@ -1,75 +1,12 @@
-*, a {
-    color: white;
-}
-
 body {
-    background-color: #29648A;
+    background-image: url("../images/paper-background-smaller.png");
+    background-repeat: space;
+    background-position: center center;
 }
 
-#nav-bar {
-    margin-bottom: 8px;
-}
-
-#container1 {
-    background-color: #25274d;
-    margin-top:5vh;
-    margin-bottom: 5vh;
-}
-
-#container2 {
-    background-color: #2e9cca;
-    margin-top:5vh;
-    margin-bottom: 5vh;
-}
-
-#rightside {
-    padding: 0;
+#jumbo {
     margin: 0;
-    padding: 8px;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-h1 {
-    padding: 0px;
-    padding-bottom: 0px;
-    margin: 0px;
-}
-
-img {
-    margin:0px;
-    padding:0px;
-
-} 
-
-#footer {
-    margin-bottom: 5vh;
-}
-
-#container2 img {
-    margin-top: 8px;
-    margin-bottom:8px;
-}
-
-hr {
-    background-color: #aaabb8;
-}
-
-#img-row1 {
-    padding: 12px;
-}
-
-h3 {
-    text-align: center;
-}
-
-#img-row2 {
-    padding: 12px;
-}
-
-#phead {
-    padding-top: 8px;
-}
-
-#button {
-    margin-bottom: 12px;
-}

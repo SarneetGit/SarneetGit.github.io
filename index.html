@@ -2,78 +2,204 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css" type="text/CSS">
-  <title>About Me | SL</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Word-Guess-Game!</title>
+    </head>
+    
+    <body>
+        <br><br><br><br><br>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-4 mx-auto">
+                    <br><br><br><br>
+                    <img src="" alt="" class="container-fluid" id="img">
+                </div>
+                <div class="col-4">
+                    <div id = "cont1" class="card mx-auto border-dark" style="width: 18rem;">
+                        <div class="card-body">
+                            <h1>Hang Man</h1>
+                            <br>
+                            
+                            <p id="gameStatus">Press any Key to Begin</p>   
+                            
+                            <div class="tenor-gif-embed" data-postid="11437059" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/rabbit-hang-dead-death-gif-11437059">Rabbit Hang GIF</a> from <a href="https://tenor.com/search/rabbit-gifs">Rabbit GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            
+                            <div class="jumbotron border-dark" id="jumbo">                    
+                                <p id="endWord">Current Word:</p>                    
+                                <p id="applyGuess">You can't guess this!</p>
+                                <p id="guessesRemaining">You have 7 guesses to finish the word.</p>                    
+                                <hr class="my-4">
+                                <p>You have guessed the following letters:</p>                    
+                                <p id="guesses"></p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="" alt="" class="container-fluid" id="imgL">
+                </div>
+            </div>
+        </div>        
 
-<body>
-  <!-- Standard Navbar from Boot Strap -->
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;" id="nav-bar">
-    <a class="navbar-brand" href="index.html">Sarneet Longia</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        
+        <script>
 
-  <div class="container rounded" id="container1">
-    <div class="row" id="row">
-      <div class="col-4">
-        <h1>
-          <strong>About Me</strong>
-        </h1>
-        <img src="assets/images/me.jpeg" alt="A Legend" id="me" class="img-fluid rounded float-left">
+        //List of Words (More to come haha)
+        var words = ["Raptors", "Pineapple", "Drake", "Javascript", "Crocodile", "Pikachu", "Labrador", "California", "Instagram", "Tranquility"]
+        
+        //List to hold my guessess
+        var guesses = []
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Very useful text indeed, helps me take up space as I need.</p>
-      </div>
-      <div class="col-8" id="rightside">
-        <img src="assets/images/mean.jpg" alt="Mean Dev" class="img-fluid mx-auto d-block float-right rounded">        
-      </div>
-    </div>
-  </div>
-  <div class="container rounded" id="container2">
-    <div class="row">
-      <div class="col-4">
-        <img class="img-fluid rounded"
-          src="https://image.slidesharecdn.com/about-my-friends-140628082310-phpapp02/95/about-best-friends-html-css-and-js-1-638.jpg?cb=1403943877"
-          alt="a pic">
-      </div>
-      <div class="col-4">
-        <img class="img-fluid rounded" src="https://cdn-images-1.medium.com/max/1200/1*OH0dDfJAGv6aEGFk2zLAxw.jpeg"
-          alt="another one">
-      </div>
-      <div class="col-4">
-        <img class="img-fluid rounded"
-          src="https://3.bp.blogspot.com/-7pXla4gYcSU/XB-aQElY_zI/AAAAAAAAHTA/soP-84BDatwdPyeo3jrwtQxQAvzbQIbUgCLcBGAs/s1600/js_css_html.png"
-          alt="ey3">
-      </div>
-    </div>
-  </div>
+        //Starting Guesses
+        var guessesCount = 7
 
-  <footer class="footer" id="footer">
-    <div class="container text-center">
-      Copyright &copy;
-    </div>
-  </footer>
+        //Starting wrong guesses
+        var badGuessess = 0
+
+        //Starting image counter
+        var imgCounter = -1
+
+        //Set Game On
+        var isGameon = true
+        
+        //Randomly select word for current game
+        function getWord() {
+            var wordIndex = Math.floor(Math.random() * 10);
+            var word = words[wordIndex]
+            return word
+        }
+
+        //Choose word for game
+        var globalWord = getWord()
+
+        //Break the word into a List
+        function getList() {
+            aList = globalWord.toLowerCase().split("")
+            return aList
+        }
+        
+        //Assign to global list
+        var globalList = getList()
+
+        //Create Starting List that is the length of the word * _
+        function startingWord() {
+            var str = (" _ ")
+            var anotherList = []
+            globalList.forEach(function(){
+                anotherList.push(str)
+            })
+            var stringDisplay = ""
+            anotherList.forEach(function(item){
+                stringDisplay += item
+            })
+            document.querySelector("#applyGuess").innerHTML = stringDisplay
+            return anotherList
+        }
+
+        //Assign list to variable
+        var globalHiddenlist = startingWord()      
+
+        //Once player looses, display the word
+        function endWord() {
+            var stringDisplay = ""
+            globalList.forEach(function(item){
+                stringDisplay += item
+                document.querySelector("#applyGuess").innerHTML = stringDisplay.toUpperCase()
+                document.querySelector("#endWord").innerHTML = "Word Was:"
+            })
+        }
+
+        //Update the board to reflect the number of letters in the word to be guessed
+        function applyGuess(char) {
+            for (var i = 0;i < globalList.length; i++) {
+                if (globalList[i] == char.key) {
+                globalHiddenlist[i] = char.key.toUpperCase()
+                var stringDisplay = ""
+                globalHiddenlist.forEach(function(item){
+                    stringDisplay += item
+                })
+                document.querySelector("#applyGuess").innerHTML = stringDisplay
+                }
+            }
+        }        
+
+        //Create a string that contains all the guesses with a space denomination
+        function getGuesses() {
+            var string = ""
+            for (var i = 0; i < guesses.length; i++) {
+                if (guesses[i].length > 0) {
+                    string = string + guesses[i] + " "
+                }
+            }
+            return string
+        }
+
+        //Calculate guessess remaining and update element
+        function guessesRemaining() {
+            guessesCount = 7 - badGuessess
+            imgCounter += 1
+            document.querySelector("#guessesRemaining").innerHTML = "You have " + guessesCount + " remaining.";
+            document.getElementById("img").src = "./assets/images/Hangman-" + imgCounter + ".png" ;
+        }
+
+        //Check if player has won or lost
+        function checkWin() {
+            if (globalHiddenlist.indexOf(" _ ") < 0 && guessesCount > 0) {
+                document.querySelector("#gameStatus").innerHTML = "YOU WON!"
+                isGameon = false
+            }
+            else if (guessesCount == 0) {
+                document.querySelector("#gameStatus").textContent = "You Lost, hold this L"
+                //document.getElementById("imgL").src = "./assets/images/L.jpg"
+                endWord()
+                isGameon = false
+            }
+        }
+
+        //If player has lost prompt them to play again
+        function playAgain () {
+            var yesno = prompt("Would you like to play again: Yes/No Y/N")
+            if (yesno.toLowerCase() === "yes" || yesno.toLowerCase() === "y") {
+                location.reload(true);
+            }
+        }
+
+        //Check if guesss is in guesses list
+        function guessExist(char) {
+            if (guesses.indexOf(char.key) < 0){
+                return true
+            }
+        }
+        
+
+        //MAIN PROCESSING CODE
+            document.onkeyup = function (char) {
+                if (isGameon && char.keyCode >= 65 && char.keyCode <= 90) {   
+                    applyGuess(char)
+                    if (guessExist(char)) {
+                        if (guessExist(char) && globalList.indexOf(char.key) < 0) {
+                            badGuessess ++
+                            guessesRemaining()
+                        }
+                        guesses.push(char.key)
+                        document.querySelector("#gameStatus").innerHTML = "Game is LIVE. Good Luck!"
+                        document.querySelector("#guesses").innerHTML = getGuesses()
+                        checkWin()
+                        }                    
+                    else {
+                        window.alert("Kindly select a character that has not been selected ...")
+                    }
+                }
+                else if (isGameon === false) {
+                    playAgain()
+                }
+            }
+    </script>
 
 </body>
 
