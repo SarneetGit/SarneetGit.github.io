@@ -1,0 +1,57 @@
+    /* Necessary for full viewport background image*/
+    html,
+    body,
+    header,
+    .view {
+        height: 100%;
+    }
+
+    header {
+        background-image: url("./images/bg-resize2.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #1C2331 !important;
+        }
+    }
+
+    .navbar {
+        background-color: rgba(0, 0, 0, .2)
+    }
+
+    .page-footer,
+    .top-nav-collapse {
+        background-color: #1C2331
+    }
+
+    @media only screen and (max-width:768px) {
+        .navbar {
+            background-color: #1C2331
+        }
+    }
+
+    /* #title { 
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+      } */
+
+     #title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+
+    hr#myLine{
+        margin: 0em;
+        border-width: 1px;
+        background-color: rgba(0, 0, 0, 0.61);
+    }

@@ -2,56 +2,288 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/CSS">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Word-Guess-Game!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <br><br><br><br><br>
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-4 mx-auto">
-                <br><br><br><br>
-                <img src="" alt="" class="container-fluid" id="img">
-            </div>
-            <div class="col-4">
-                <div id="cont1" class="card mx-auto border-dark" style="width: 18rem;">
-                    <div class="card-body">
-                        <h1>Hang Man</h1>
-                        <br>
 
-                        <p id="gameStatus">Press any Key to Begin</p>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
 
-                        <div class="tenor-gif-embed" data-postid="11437059" data-share-method="host" data-width="100%"
-                            data-aspect-ratio="1.0"><a
-                                href="https://tenor.com/view/rabbit-hang-dead-death-gif-11437059">Rabbit Hang GIF</a>
-                            from <a href="https://tenor.com/search/rabbit-gifs">Rabbit GIFs</a></div>
-                        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <!-- Brand -->
+            <!-- <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+                <strong>Sarneet Longia</strong>
+            </a> -->
 
-                        <div class="jumbotron border-dark" id="jumbo">
-                            <p id="endWord">Current Word:</p>
-                            <p id="applyGuess">You can't guess this!</p>
-                            <p id="guessesRemaining">You have 7 guesses to finish the word.</p>
-                            <hr class="my-4">
-                            <p>You have guessed the following letters:</p>
-                            <p id="guesses"></p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Projects</a>
+                    </li>
+                </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/sarneet-longia/" class="nav-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/SarneetGit" class="nav-link" target="_blank">
+                            <i class="fab fa-github mr-2"></i>
+                        </a>
+                    </li>
+                </ul>
+
             </div>
-            <div class="col-4">
-                <img src="" alt="" class="container-fluid" id="imgL">
-            </div>
+
         </div>
-    </div>
+    </nav>
+    <!-- Navbar -->
+    <header>
+        <div class="container text-center" id="title">
+            <h1 style="color: white; font-weight: bolder;font-size: 4.5em;line-height: 2">Sarneet Longia</h3>
+                <hr class="" id="myLine"
+                    style="width:45%; margin-left:27.5% !important; margin-right:27.5% !important;">
+                <h3 style="color: white;font-size: 2.5em">Software Developer</h6>
+        </div>
+    </header>
 
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    <!--Main layout-->
+    <main>
+        <div class="container">
 
+
+            <!--Section: Main info-->
+            <section class="mt-5 wow fadeIn">
+
+                <h3 class="h3 text-center mb-5">My Projects</h3>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/42.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/41.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Main info-->
+
+            <hr class="my-5">
+
+
+            <!--Section: Main info-->
+            <section class="mt-5 wow fadeIn">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/42.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/41.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+        <div class="footer-copyright py-3">
+            © 2019 Copyright: Sarneet Longia
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js">
+    </script>
+    <!-- My JS -->
+    <script type="text/javascript" src="./assets/javascript.js"></script>
 </body>
 
 </html>
