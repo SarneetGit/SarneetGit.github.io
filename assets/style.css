@@ -28,12 +28,7 @@
         background-color: #1C2331
     }
 
-    @media only screen and (max-width:768px) {
-        .navbar {
-            background-color: #1C2331
-        }
-    }
-
+    
     /* #title { 
         display: -webkit-flex;
         display: flex;
@@ -43,15 +38,54 @@
         justify-content: center;
       } */
 
-     #title {
+      #title {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
        }
-
-    hr#myLine{
+       
+    #line{
         margin: 0em;
         border-width: 1px;
         background-color: rgba(0, 0, 0, 0.61);
+        width:45%;
+        margin-left:27.5%;
+        margin-right:27.5%
     }
+    
+    #name {
+        color: white; 
+        font-weight: bolder;
+        font-size: 4.5em;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #position {
+        color: white;
+        font-size: 2.5em;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    @media only screen and (max-width:768px) {
+        .navbar {
+            background-color: #1C2331
+        }
+        #line{
+            width:80%;
+            margin-left:10%;
+            margin-right:10%
+        }
+    
+        #name {
+            font-size: 3em;
+        }
+    
+        #position {
+            font-size: 1.5em;
+        }
+    }
+    
+    
