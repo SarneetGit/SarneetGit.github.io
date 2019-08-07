@@ -6,6 +6,10 @@
         height: 100%;
     }
 
+    html {
+        scroll-behavior: smooth;
+      }
+      
     header {
         background-image: url("./images/bg-iceland.jpg");
         background-size: cover;
@@ -68,12 +72,27 @@
         line-height: 1.5;
         font-family: 'Roboto', sans-serif;
     }
+
+    #projects {
+        padding-top: 50px;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3em;
+    }
+
+    #contact {
+        padding: 40px 0px;
+    }
     
+    #phoneNumber {
+        padding-top: 10px;
+    }
+
     @media only screen and (max-width:768px) {
         .navbar {
             background-color: #1C2331
         }
-        #line{
+        #line {
             width:80%;
             margin-left:10%;
             margin-right:10%

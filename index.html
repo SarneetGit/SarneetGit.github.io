@@ -41,17 +41,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <!-- Left -->
-                <ul class="navbar-nav mr-auto">
+                <ul class="smooth-scroll navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="nav-link" href="#home">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
 
@@ -74,7 +74,7 @@
         </div>
     </nav>
     <!-- Navbar -->
-    <header>
+    <header id="home">
         <div class="container text-center" id="title">
             <h1 class="h1-responsive" id="name">Sarneet Longia</h3>
             <hr id="line">
@@ -90,7 +90,7 @@
             <!--Section: Projects R1-->
             <section class="mt-5 wow fadeIn">
 
-                <h3 class="h3 text-center mb-5">My Projects</h3>
+                <h3 class="h3 text-center mb-5" id="projects">My Projects</h3>
 
                 <!--Grid row-->
                 <div class="row">
@@ -266,6 +266,36 @@
         </div>
     </main>
     <!--Main layout-->
+
+    <!-- Contact -->
+    <section class="mt-5" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="border border-light p-5" method="post" action="./assets/contactForm.php">
+                
+                        <p class="h4 mb-4 text-center">Contact <strong><bold>Sarneet</bold></strong></p>
+                    
+                    
+                        <input type="text" id="defaultContactFormName" name="name" class="form-control mb-4" placeholder="Name">
+                    
+                        <input type="email" id="defaultContactFormEmail" name="email" class="form-control mb-4" placeholder="E-mail">
+                    
+                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" name="message" placeholder="Message"></textarea>
+                    
+                        <div class="custom-control custom-checkbox mb-4">
+                            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                            <label class="custom-control-label" for="defaultContactFormCopy">Carbon Copy (CC)</label>
+                        </div>
+                    
+                        <button class="btn btn-info btn-block" type="submit">Send</button>
+                        <p class="text-center" id="phoneNumber" name="submit">Phone Number: 647 680 8646</p>
+                        <p class="text-center">Email Address: sarneet.longia@gmail.com</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="page-footer text-center font-small mt-4 fadeIn">
         <div class="footer-copyright py-3">
