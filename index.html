@@ -276,37 +276,61 @@
     <!-- Contact -->
     <section class="mt-5" id="contact">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form class="gform border border-light p-5" id="gform" method="post" action="https://script.google.com/macros/s/AKfycbweLSDYR4blA9FWSIADmJFPP-L2iAnDmQFJ_TSt/exec">
-                        
-                        <div style="display:none" class="thankyou_message">
-                            <!-- You can customize the thankyou message by editing the code below -->
-                            <h2>Thank you for reaching out!</h2>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <form class="gform border border-light p-5 rounded contact_form" id="gform" method="post" action="https://script.google.com/macros/s/AKfycbweLSDYR4blA9FWSIADmJFPP-L2iAnDmQFJ_TSt/exec">
+                        <!-- Nested Row -->
+                        <div class="row justify-content-end">
+                            <!-- Nested Row Col 1 -->
+                            <div class="col-md-7">
+                                <!-- <div style="display:none" class="thankyou_message">-->
+                                    <!-- You can customize the thankyou message by editing the code below 
+                                    <p class="h4 mb-4 text-center">Thank you for reaching out!</p>
+                                </div> -->
+                                
+                                <p class="h4 mb-4 text-center">Contact <strong><bold>Sarneet</bold></strong></p>
+                            
+                            
+                                <input type="text" id="defaultContactFormName" name="name" class="form-control mb-4" placeholder="Name">
+                            
+                                <input type="email" id="defaultContactFormEmail" name="email" class="form-control mb-4" placeholder="E-mail">
+                            
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" name="message" placeholder="Message"></textarea>
+                            
+                                <div class="custom-control custom-checkbox mb-4">
+                                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                                    <label class="custom-control-label" for="defaultContactFormCopy">Carbon Copy (CC)</label>
+                                </div>
+        
+                                <fieldset class="honeypot-field">
+                                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                                    <input id="honeypot" type="text" name="honeypot" value="" />
+                                </fieldset>
+                            
+                                <button class="btn btn-light btn-block" type="submit">Send</button>
+                            </div>
+                            <!-- End Nested Row Col 1 -->
+                            <div class="col-md-5 align-self-start">
+                                <div class="banner">
+                                    <div class="banner-body">
+                                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                                        <h4>&nbsp;&nbsp;Toronto,&nbsp;Ontario</h4>
+                                    </div>
+                                </div>
+                                <div class="banner">
+                                    <div class="banner-body">
+                                        <i class="fas fa-phone mt-4 fa-2x"></i>
+                                        <h4>&nbsp;&nbsp;(647)-680-8646</h4>
+                                    </div>
+                                </div>
+                                <div class="banner">
+                                    <div class="banner-body">
+                                        <i class="fas fa-envelope mt-4 fa-2x"></i>
+                                        <h5>&nbsp;&nbsp;Sarneet.Longia@gmail.com</h5>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <p class="h4 mb-4 text-center">Contact <strong><bold>Sarneet</bold></strong></p>
-                    
-                    
-                        <input type="text" id="defaultContactFormName" name="name" class="form-control mb-4" placeholder="Name">
-                    
-                        <input type="email" id="defaultContactFormEmail" name="email" class="form-control mb-4" placeholder="E-mail">
-                    
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" name="message" placeholder="Message"></textarea>
-                    
-                        <div class="custom-control custom-checkbox mb-4">
-                            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                            <label class="custom-control-label" for="defaultContactFormCopy">Carbon Copy (CC)</label>
-                        </div>
-
-                        <fieldset class="honeypot-field">
-                            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-                            <input id="honeypot" type="text" name="honeypot" value="" />
-                        </fieldset>
-                    
-                        <button class="btn btn-info btn-block" type="submit">Send</button>
-                        <p class="text-center" id="phoneNumber" name="submit">Phone Number: 647 680 8646</p>
-                        <p class="text-center">Email Address: sarneet.longia@gmail.com</p>
                     </form>
                 </div>
             </div>

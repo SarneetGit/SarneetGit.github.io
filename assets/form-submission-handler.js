@@ -86,6 +86,7 @@
           if (!notification) {
             //set to true to avoid multiple executions
             notification = true
+            alertify.alert().set('message', 'Thank you for reaching out!').setHeader('Sarneet Says').show(); 
             alertify.success("Message Sent!");
           }
           return;

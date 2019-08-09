@@ -110,3 +110,83 @@
     .honeypot-field {
         display: none;
       }
+
+    .contact_form {
+        border: 1px solid #ededed;
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+        background-color: #f2f3f5;
+        padding: 40px 30px;
+        border-radius: 5px;
+        color: #bcbcbc;
+    }
+    
+    .contact_form .form-control {
+        background-color: #000000;
+        margin-bottom: 30px;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        color: #bcbcbc;
+        font-size: 16px;
+        outline: 0 none;
+        padding: 10px 25px;
+        height: 55px;
+        resize: none;
+        box-shadow: none !important;
+        width: 100%;
+    }
+    
+    .contact_form textarea {
+        color: #bcbcbc;
+        padding: 20px 25px !important;
+        height: 160px !important;
+    }
+    
+    .contact_form .form-control::-webkit-input-placeholder {
+        color: #bcbcbc;
+    }
+    
+    .contact_form .form-control::-moz-placeholder {
+        opacity: 1;
+        color: #bcbcbc;
+    }
+    
+    .contact_form .form-control::-ms-input-placeholder {
+        color: #bcbcbc;
+    }
+
+    .contact_form {
+        background-color: #111111;
+        border: 0;
+        border-bottom: 2px solid #1f1f1f !important;
+    }
+
+    .contact_form .form-control {
+        background-color: #000;
+        border: 0;
+        border-bottom: 2px solid #1f1f1f !important;
+    }
+    
+    .contact_form .btn.subt{
+        background: #bb9d52;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      
+    .banner-body h4, .banner-body h5 {
+    display: inline-block;
+    }
+    
+    .banner-body i {
+    margin-top:5px;
+    padding: 0 6px;
+    }
+    
+    .banner-body {
+        padding: 5px 5px;
+    }
+
+    
