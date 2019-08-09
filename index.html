@@ -17,13 +17,13 @@
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/alertify.min.css"/>
+    <link rel="stylesheet" href="./assets/css/alertify.min.css"/>
     <!-- Default theme -->
-    <link rel="stylesheet" href="./assets/default.min.css"/>
+    <link rel="stylesheet" href="./assets/css/default.min.css"/>
     <!-- Semantic UI theme -->
-    <link rel="stylesheet" href="./assets/semantic.min.css"/>
+    <link rel="stylesheet" href="./assets/css/semantic.min.css"/>
     <!-- My CSS -->
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -288,16 +288,16 @@
                                     <p class="h4 mb-4 text-center">Thank you for reaching out!</p>
                                 </div> -->
                                 
-                                <p class="h4 mb-4 text-center">Contact <strong><bold>Sarneet</bold></strong></p>
+                                <p class="h3 mb-4 text-center">Contact <strong><bold>Sarneet</bold></strong></p>
                             
                             
-                                <input type="text" id="defaultContactFormName" name="name" class="form-control mb-4" placeholder="Name">
+                                <input type="text" id="formName" name="name" class="form-control mb-4" placeholder="Name">
                             
-                                <input type="email" id="defaultContactFormEmail" name="email" class="form-control mb-4" placeholder="E-mail">
+                                <input type="email" id="formEmail" name="email" class="form-control mb-4" placeholder="E-mail">
                             
-                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" name="message" placeholder="Message"></textarea>
-                            
-                                <div class="custom-control custom-checkbox mb-4">
+                                <textarea class="form-control rounded-0" id="message" rows="3" name="message" placeholder="Message"></textarea>
+                                <!-- Hideen for now -->
+                                <div class="custom-control custom-checkbox mb-4 d-none">
                                     <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
                                     <label class="custom-control-label" for="defaultContactFormCopy">Carbon Copy (CC)</label>
                                 </div>
@@ -307,26 +307,26 @@
                                     <input id="honeypot" type="text" name="honeypot" value="" />
                                 </fieldset>
                             
-                                <button class="btn btn-light btn-block" type="submit">Send</button>
+                                <button class="btn btn-light btn-block" type="submit" id="submit">Send</button>
                             </div>
                             <!-- End Nested Row Col 1 -->
                             <div class="col-md-5 align-self-start">
                                 <div class="banner">
                                     <div class="banner-body">
                                         <i class="fas fa-map-marker-alt fa-2x"></i>
-                                        <h4>&nbsp;&nbsp;Toronto,&nbsp;Ontario</h4>
+                                        <p class="h5 mb-2 text-center">&nbsp;&nbsp;Toronto,&nbsp;Ontario</p>
                                     </div>
                                 </div>
                                 <div class="banner">
                                     <div class="banner-body">
                                         <i class="fas fa-phone mt-4 fa-2x"></i>
-                                        <h4>&nbsp;&nbsp;(647)-680-8646</h4>
+                                        <p class="h5 mb-2 text-center">&nbsp;&nbsp;(647)-680-8646</p>
                                     </div>
                                 </div>
                                 <div class="banner">
                                     <div class="banner-body">
                                         <i class="fas fa-envelope mt-4 fa-2x"></i>
-                                        <h5>&nbsp;&nbsp;Sarneet.Longia@gmail.com</h5>
+                                        <p class="h5 mb-2 text-center">&nbsp;&nbsp;sarneet.longia@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +335,13 @@
                 </div>
             </div>
         </div>
+        <div class="spinner d-none">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
     </section>
+
 
     <footer class="page-footer text-center font-small mt-4 fadeIn">
         <div class="footer-copyright py-3">
@@ -356,11 +362,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js">
     </script>
     <!-- Alertify -->
-    <script type="text/javascript" src="./assets/alertify.min.js"></script>
-    <!-- My JS -->
-    <script type="text/javascript" src="./assets/javascript.js"></script>
+    <script type="text/javascript" src="./assets/javascript/alertify.min.js"></script>
     <!-- Form Handler JS -->
-    <script data-cfasync="false" type="text/javascript" src="./assets/form-submission-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="./assets/javascript/form-submission-handler.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="./assets/javascript/javascript.js"></script>
 </body>
 
 </html>
